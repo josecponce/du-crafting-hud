@@ -1,0 +1,8 @@
+out/*
+!out/development
+out/development/*
+!out/development/crafting-hud.json
+
+*.iml
+/.idea/
+src/du_lib

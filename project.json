@@ -1,0 +1,36 @@
+{
+  "cli": {
+    "fmtVersion": 2
+  },
+  "name": "du-crafting-hud",
+  "description": "",
+  "sourcePath": "src",
+  "outputPath": "out",
+  "builds": {
+    "crafting-hud": {
+      "name": "crafting-hud",
+      "type": "control",
+      "slots": {
+        "schemCostDb": {
+          "name": "schemCostDb",
+          "type": "databank"
+        },
+        "talentsDb": {
+          "name": "talentsDb",
+          "type": "databank"
+        },
+        "oresCostDb": {
+          "name": "oresCostDb",
+          "type": "databank"
+        }
+      }
+    }
+  },
+  "targets": {
+    "development": {
+      "name": "development",
+      "handleErrors": false,
+      "minify": false
+    }
+  }
+}
