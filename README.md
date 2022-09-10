@@ -6,8 +6,8 @@
   and [du-storage-monitoring](https://github.com/Jericho1060/du-storage-monitoring) projects.
 
 ## Features
-- Show/Hide Hud: Alt + 2. Also, useful to avoid key presses to be interpreted by the Hud.
-- Calculate Crafting Costs:
+- **Show/Hide Hud**: Alt + 2. Also, useful to avoid key presses to be interpreted by the Hud.
+- **Calculate Crafting Costs**:
   - Calculation Modes: Cycle using Alt + 3 once a product is selected.
     - Direct: costs directly from the recipe (adjusted for talents)
     - Ores Only: recursive costs but displays only the ores instead of including intermediate products.
@@ -24,7 +24,7 @@
   - Notes:
     - Most production speed talents are not taken into account atm.
     - All input/output talents are taken into account.
-- Databank Huds to update talent levels, ores and schematics costs: Cycle using Alt + 1.
+- **Databank Huds to update talent levels, ores and schematics costs**: Cycle using Alt + 1.
   - Talent Levels Db Hud: Set talent levels for the player running the factory.
   - Ores Cost Db Hud: Set estimated ore cost for each ore. Used to estimate quanta cost of products.
   - Schematics Cost Db Hud: Current cost of schematic copies. Note this is per schematic copy, not per schematic copy batch,
