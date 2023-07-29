@@ -17,7 +17,7 @@ workPerTick = 1000 --export: coroutine amount of work done per tick
 ---@type number
 workTickInterval = 0.1 --export: coroutine interval between ticks
 ---@type number
-contentFontSize = 15 --export
+contentFontSize = 30 --export
 ---@type number
 elementsByPage = 15 --export
 ---@type number

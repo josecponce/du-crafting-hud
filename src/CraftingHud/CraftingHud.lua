@@ -200,11 +200,16 @@ function CraftingHud.new(system, hud, craftingCalculator)
         local currentGroup = breadcrumbs[#breadcrumbs]
         title = title .. ' - ' .. calculationMode:upper() .. ' - ' .. currentGroup.name
 
-        local groups
+        ---@type string[]
+        local groups = {}
+        if currentGroup.groupNames then
+            local groupNames = currentGroup.groupNames
+            table.move(groupNames, 1, #groupNames, #groups + 1, groups)
+        end
+
         if currentGroup.itemNames then
-            groups = currentGroup.itemNames
-        else
-            groups = currentGroup.groupNames
+            local itemNames = currentGroup.itemNames
+            table.move(itemNames, 1, #itemNames, #groups + 1, groups)
         end
 
         local data = FullDataHudData.new(title, HEADERS, rows, groups)
@@ -246,10 +251,12 @@ function CraftingHud.new(system, hud, craftingCalculator)
     local function onGroupActionRight(_, index)
         local previous = breadcrumbs[#breadcrumbs]
         local previousGroups = previous.groups
-        if previousGroups then
+        if previousGroups and index <= #previousGroups then
             local current = previousGroups[index]
             table.insert(breadcrumbs, current)
             hud.setSelected(1, 1)
+
+            return
         end
 
         local previousItemIds = previous.itemIds
