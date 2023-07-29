@@ -1,7 +1,7 @@
-require('du_lib/requires/service')
-require('du_lib/requires/dataHud')
-require('du_lib/crafting/CraftingCalculator')
-require('du_lib/data/ItemGroups')
+require('../du_lib/requires/service')
+require('../du_lib/requires/dataHud')
+require('../du_lib/crafting/CraftingCalculator')
+require('../du_lib/data/ItemGroups')
 
 ---@class ItemGroupBreadcrumb
 ---@field name string
